@@ -341,6 +341,13 @@
           "on_secondary_button": "secondary_button_text",
           "secondary_button_border": "secondary_button_border"
         }
+      },
+      {
+        "type": "color",
+        "id": "site_border_color",
+        "default": "#1A1A1A",
+        "label": "Border color",
+        "alpha": true
       }
     ]
   },
@@ -401,6 +408,10 @@
             "label": "12px"
           },
           {
+            "value": "13",
+            "label": "13px"
+          },
+          {
             "value": "14",
             "label": "14px"
           },
@@ -413,7 +424,7 @@
             "label": "18px"
           }
         ],
-        "default": "14"
+        "default": "13"
       },
       {
         "type": "select",
@@ -511,6 +522,10 @@
           {
             "value": "88",
             "label": "88px"
+          },
+          {
+            "value": "96",
+            "label": "96px"
           },
           {
             "value": "120",
@@ -659,6 +674,10 @@
           {
             "value": "88",
             "label": "88px"
+          },
+           {
+            "value": "96",
+            "label": "96px"
           },
           {
             "value": "120",

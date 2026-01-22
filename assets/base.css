@@ -322,12 +322,21 @@ p:empty {
   --page-margin: 16px;
 }
 
-@media screen and (min-width: 750px) {
-  .page-width-wide,
+@media screen and (min-width: 767px) {
+    .page-width-wide,
   .page-width-normal,
   .page-width-narrow,
   .page-width-content {
     --page-margin: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .page-width-wide,
+  .page-width-normal,
+  .page-width-narrow,
+  .page-width-content {
+    --page-margin: 55px;
   }
 }
 
