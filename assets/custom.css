@@ -85,3 +85,19 @@ header-actions {
     line-height: 100%;
     letter-spacing: 1.3px;
 }
+
+.second_hero_section {
+    padding: 24px;
+}
+
+/* .second_hero_section .hero__container.spacing-style.section.section--full-width {
+    min-height: auto;
+}
+
+.second_hero_section .hero__container.spacing-style.section.section--full-width .hero__media-wrapper {
+    position: unset;
+}
+
+.hero.second_hero_section {
+    min-height: auto;
+} */
