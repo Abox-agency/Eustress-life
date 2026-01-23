@@ -80,7 +80,7 @@ header-actions {
     margin-top: -12px;
 }
 
-.f_block_hero_section .block_custom_button {
+.block_custom_button {
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 1.3px;
@@ -89,6 +89,37 @@ header-actions {
 .second_hero_section {
     padding: 24px;
 }
+
+.block_custom_banner_secion .hero__content-wrapper .group-block-content {
+    gap: 0;
+}
+
+.block_custom_banner_secion .block_custom_button {
+    margin-top: 24px;
+}
+
+.product-card__content {
+    padding-bottom: 0 !important;
+}
+
+.resource-list div.resource-list__carousel {
+    padding-bottom: 24px;
+}
+
+.block__product_title * {
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+}
+product-price .price {
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+/* .block_custom_banner_secion .hero__container {
+    z-index: 1;
+} */
 
 /* .second_hero_section .hero__container.spacing-style.section.section--full-width {
     min-height: auto;

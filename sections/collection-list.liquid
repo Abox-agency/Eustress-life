@@ -25,6 +25,8 @@
     section-resource-list
     spacing-style
     gap-style
+
+    {{ section.settings.custom_class }}
   "
   style="
     {% render 'spacing-style', settings: section.settings %}
@@ -351,6 +353,11 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom class"
     }
   ],
   "presets": [
