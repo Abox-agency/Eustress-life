@@ -8,12 +8,14 @@
   "
   data-testid="cart-icon"
 >
-  <span
-    class="svg-wrapper"
+{% comment %} svg-wrapper {% endcomment %}
+  <p
+    class="cart-icon__text"
     aria-hidden="true"
   >
-    {{ 'icon-cart.svg' | inline_asset_content }}
-  </span>
+    {% comment %} {{ 'icon-cart.svg' | inline_asset_content }} {% endcomment %}
+      Cart
+  </p>
 
   {% render 'cart-bubble', limit: 100, live_region: true, test_id: test_id %}
 </cart-icon>

@@ -18,6 +18,9 @@
       {% assign opacity_40_60 = 0.40 %}
       {% assign opacity_30_60 = 0.30 %}
     {% endif %}
+    
+   
+
     .color-{{ scheme.id }} {
         --color-background: rgb({{ scheme.settings.background.rgba }});
         /* RGB values only to apply different opacities - Relative color values are not supported in iOS < 16.4 */
@@ -70,6 +73,9 @@
         --color-selected-variant-hover-text: rgb({{ scheme.settings.selected_variant_hover_text_color.rgba }});
         --color-selected-variant-hover-border: rgb({{ scheme.settings.selected_variant_hover_border_color.rgba }});
 
+
+        --color--border: rgba({{ settings.site_border_color.rgba }});
+        
         --input-disabled-background-color: rgb(var(--color-foreground-rgb) / var(--opacity-10));
         --input-disabled-border-color: rgb(var(--color-foreground-rgb) / var(--opacity-5-15));
         --input-disabled-text-color: rgb(var(--color-foreground-rgb) / var(--opacity-50));
@@ -95,5 +101,9 @@
   {{ scheme_classes | prepend: 'body' }} {
     color: var(--color-foreground);
     background-color: var(--color-background);
+  }
+
+  :root{
+    
   }
 {% endstyle %}

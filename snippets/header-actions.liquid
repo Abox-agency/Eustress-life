@@ -7,6 +7,13 @@
 <header-actions
   {{- block.shopify_attributes -}}
 >
+
+{% comment %} Contact us page link {% endcomment %}
+
+<a href="#" data-skip-node-update="true" class="custom_menu-list__link" ref="menuitem" aria-expanded="false">
+        <p class="menu-list__link-title">Contact us</p>
+</a>
+
   {% if shop.customer_accounts_enabled %}
     {% render 'account-popover' %}
     {% render 'account-drawer' %}
@@ -199,9 +206,9 @@
     }
   }
 
-  .header__column--right header-actions {
+  /* .header__column--right header-actions {
     margin-inline-start: calc(var(--gap-md) * -1);
-  }
+  } */
 
   .header-actions__action {
     --button-color: var(--color-foreground);
@@ -211,10 +218,10 @@
     justify-content: center;
   }
 
-  .header-actions__action .svg-wrapper {
+  /* .header-actions__action .svg-wrapper {
     height: var(--button-size);
     width: var(--button-size);
-  }
+  } */
 
   .header-actions__action svg {
     width: var(--icon-size-md);
