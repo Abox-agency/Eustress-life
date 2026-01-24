@@ -348,6 +348,13 @@
         "default": "#1A1A1A",
         "label": "Border color",
         "alpha": true
+      },
+      {
+        "type": "color",
+        "id": "extra_text_color",
+        "default": "#FFEDAB",
+        "label": "Text color",
+        "alpha": true
       }
     ]
   },

@@ -117,18 +117,107 @@ product-price .price {
     text-transform: uppercase;
 }
 
-/* .block_custom_banner_secion .hero__container {
-    z-index: 1;
-} */
-
-/* .second_hero_section .hero__container.spacing-style.section.section--full-width {
-    min-height: auto;
+.h_bottom_section strong {
+    color: var(--deco--text--color);
+    font-weight: 400;
 }
 
-.second_hero_section .hero__container.spacing-style.section.section--full-width .hero__media-wrapper {
-    position: unset;
+.h_bottom_section .group-block-content {
+    max-width: 630px;
 }
 
-.hero.second_hero_section {
-    min-height: auto;
-} */
+.h_bottom_section .image-block {
+    height: 100%;
+}
+
+email-signup-block.email-signup-block {
+    max-width: 810px;
+    width: 100%;
+}
+
+.email-signup-block .email-signup__input {
+    padding: 20px 25px !important;
+    box-shadow: none;
+    border-bottom: 1px solid #1D1D1B !important;
+}
+
+.email-signup-block .email-signup__input::placeholder {
+    color: #1D1D1B;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.email-signup-block .email-signup__button {
+    position: unset !important;
+    width: 200px !important;
+    padding: 18px 36px !important;
+}
+.email-signup__input-group {
+    align-items: center;
+}
+.email-signup-block .email-signup__button {
+    position: unset!important;
+    width: 200px!important;
+    padding: 18px 36px!important;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 1.3px;
+    height: auto !important;
+}
+
+.footer-content {
+    display: block !important;
+}
+.social_media_group .text-block p,
+.shopify-section-group-footer-group li.menu__item a {
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.block__footer_bottom,
+.block__footer_email_wrapper {
+    position: relative;
+}
+
+.block__footer_bottom::after,
+.block__footer_email_wrapper:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 1px;
+    border-top: 1px solid rgba(29, 29, 27, 0.15);
+}
+
+.block__footer_email_wrapper:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 1px;
+    border-bottom: 1px solid rgba(29, 29, 27, 0.15);
+}
+
+.block__footer_bottom .text-block strong,
+.block__footer_bottom .text-block {
+    font-weight: 600;
+    line-height: 1; 
+    text-transform: uppercase;
+}
+
+.block__footer_bottom .text-block strong {
+    opacity: 0.6;
+}
+.block__footer_bottom .text-block a {
+    text-decoration: none !important;
+}
+.email-signup__input-group {
+    gap: 10px;
+}
+.email-signup-block + .text-block *{
+    font-weight: 500;
+}
