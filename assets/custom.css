@@ -221,3 +221,8 @@ email-signup-block.email-signup-block {
 .email-signup-block + .text-block *{
     font-weight: 500;
 }
+
+slideshow-slides[gutters*=start] {
+    padding-inline-start: 24px !important;
+    scroll-padding-inline-start: 24px !important;
+}
