@@ -38,10 +38,10 @@
   {%- else -%}
   {% comment %} account-button__icon {% endcomment %}
     <span
-      class="account-button__text"
+      class="account-button__text account-button__icon"
       aria-hidden="true"
     >
-      {% comment %} {{- 'icon-account.svg' | inline_asset_content -}} {% endcomment %}
+      {{- 'icon-account.svg' | inline_asset_content -}}
        Login
     </span>
   {%- endif -%}
