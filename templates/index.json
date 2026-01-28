@@ -481,7 +481,7 @@
           "name": "t:names.product_card",
           "static": true,
           "settings": {
-            "product_card_gap": 4,
+            "product_card_gap": 0,
             "inherit_color_scheme": true,
             "color_scheme": "",
             "border": "none",
@@ -546,7 +546,8 @@
                 "padding-block-start": 12,
                 "padding-block-end": 12,
                 "padding-inline-start": 14,
-                "padding-inline-end": 14
+                "padding-inline-end": 14,
+                "custom_class": "product_card_group"
               },
               "blocks": {
                 "product_title_WwBMPN": {
@@ -898,7 +899,8 @@
                 "padding-block-start": 12,
                 "padding-block-end": 12,
                 "padding-inline-start": 14,
-                "padding-inline-end": 14
+                "padding-inline-end": 14,
+                "custom_class": "product_card_group"
               },
               "blocks": {
                 "product_title_iPWLXn": {
@@ -1250,7 +1252,8 @@
                 "padding-block-start": 12,
                 "padding-block-end": 12,
                 "padding-inline-start": 14,
-                "padding-inline-end": 14
+                "padding-inline-end": 14,
+                "custom_class": "product_card_group"
               },
               "blocks": {
                 "product_title_rP3cLF": {
@@ -1602,7 +1605,8 @@
                 "padding-block-start": 12,
                 "padding-block-end": 12,
                 "padding-inline-start": 14,
-                "padding-inline-end": 14
+                "padding-inline-end": 14,
+                "custom_class": "product_card_group"
               },
               "blocks": {
                 "product_title_rHewdY": {
@@ -1751,7 +1755,7 @@
             "padding-block-end": 60,
             "padding-inline-start": 100,
             "padding-inline-end": 100,
-            "custom_class": ""
+            "custom_class": "h_text-with_image"
           },
           "blocks": {
             "text_C8wLQc": {
