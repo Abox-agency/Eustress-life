@@ -309,6 +309,18 @@ p.menu-list__link-title {
     .h_bottom_section .group-block-content {
         gap: 30px;
     }
+    .menu__item + .menu__item {
+        margin-top: 16px !important;
+    }
+    .block__footer_email_wrapper .group-block-content {
+        gap: 20px !important;
+    }
+    .email-signup-block .email-signup__input {
+        padding: 16px 20px !important;
+    }
+    .block__footer_bottom, .block__footer_email_wrapper,.block_footer_menu_list {
+        padding-inline: 40px !important;
+    }
 }
 
 
@@ -320,6 +332,9 @@ p.menu-list__link-title {
 
     .h_text-with_image .text-block.custom-font-size p {
         font-size: 16px !important;
+    }
+    email-signup-block.email-signup-block {
+        max-width: 680px;
     }
 }
 
@@ -410,8 +425,15 @@ p.menu-list__link-title {
     .h_bottom_section .group-block-content {
         gap: 20px;
     }
+    .menu__item+.menu__item {
+        margin-top: 12px!important;
+    }
+    .block__footer_email_wrapper .group-block-content {
+        gap: 16px!important;
+    }
 
 }
+
 
 
 
@@ -419,6 +441,28 @@ p.menu-list__link-title {
     slideshow-slides[gutters*=start] {
         padding-inline-start: 10px!important;
         scroll-padding-inline-start: 10px!important;
+    }
+    email-signup-block.email-signup-block {
+        max-width: 600px;
+    }
+    .email-signup-block .email-signup__input {
+        padding: 14px 15px!important;
+    }
+    .email-signup__input-group {
+        grid-template-columns: 1fr auto !important;
+    }
+    .block__footer_bottom .group-block-content {
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+    .block__footer_bottom, .block__footer_email_wrapper, .block_footer_menu_list {
+        padding-inline: 16px!important;
+    }
+    .block_footer_menu_list .group-block-content {
+        gap: 10px;
+    }
+    .email-signup-block .email-signup__button {
+        width: 120px!important;
     }
 }
 
@@ -503,6 +547,17 @@ p.menu-list__link-title {
     .section-resource-list__header .group-block {
         padding-block: 28px!important;
     }
+    .block__footer_bottom .group-block-content {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .email-signup-block .email-signup__input {
+        padding: 12px !important;
+    }
+    .block__footer_email_wrapper .group-block-content {
+        gap: 10px !important;
+    }
 }
 
 @media (max-width:480px) {
@@ -515,5 +570,14 @@ p.menu-list__link-title {
     }
     .resource-list__carousel .resource-list__slide {
         --slide-width: clamp(150px, 64cqw, var(--slide-width-max)) !important;
+    }
+}
+
+@media (max-width:400px) {
+    .email-signup__input-group:not(:has(.email-signup__button--arrow)) {
+        grid-template-columns: 1fr !important;
+    }
+    .email-signup-block .email-signup__button {
+        width: 100% !important;
     }
 }
