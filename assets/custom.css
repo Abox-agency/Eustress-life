@@ -162,6 +162,7 @@ email-signup-block.email-signup-block {
     padding: 20px 25px !important;
     box-shadow: none;
     border-bottom: 1px solid #1D1D1B !important;
+    font-size: 13px !important;
 }
 
 .email-signup-block .email-signup__input::placeholder {
@@ -170,6 +171,7 @@ email-signup-block.email-signup-block {
     line-height: 1;
     letter-spacing: 1.3px;
     text-transform: uppercase;
+    font-size: 13px;
 }
 
 .email-signup-block .email-signup__button {
@@ -263,6 +265,9 @@ p.menu-list__link-title {
     .group-block.h_text-with_image {
         padding-inline: 60px !important;
     }
+    .email-signup-block .email-signup__button {
+        width: 180px!important;
+    }
 }
 
 @media (max-width:1279px) {
@@ -294,8 +299,27 @@ p.menu-list__link-title {
     .resource-list__carousel .resource-list__slide {
         --section-slide-width: calc( (105% - (var(--resource-list-column-gap) * (var(--column-count) - 1)) - var(--peek-next-slide-size)) / var(--column-count) ) !important;
     }
+    .email-signup-block .email-signup__button,
     .block_custom_button.button {
         padding: 16px 32px !important;
+    }
+    .email-signup-block .email-signup__button {
+        width: 170px!important;
+    }
+    .h_bottom_section .group-block-content {
+        gap: 30px;
+    }
+}
+
+
+@media (max-width:1180px) {
+    .group-block.h_text-with_image {
+        padding-inline: 40px!important;
+        padding-block: 50px !important;
+    }
+
+    .h_text-with_image .text-block.custom-font-size p {
+        font-size: 16px !important;
     }
 }
 
@@ -335,11 +359,15 @@ p.menu-list__link-title {
     .header__column .header-logo {
         margin-top: -8px;
     }
+    .email-signup-block .email-signup__button,
     .block_custom_button.button {
         padding: 16px 28px !important;
     }
     .product_card_group .group-block-content {
         gap: 5px !important;
+    }
+    .email-signup-block .email-signup__button {
+        width: 160px!important;
     }
 }
 
@@ -362,7 +390,29 @@ p.menu-list__link-title {
     .resource-list__carousel .resource-list__slide {
         --section-slide-width: calc( (142% - (var(--resource-list-column-gap) * (var(--column-count) - 1)) - var(--peek-next-slide-size)) / var(--column-count) ) !important;
     }
+    .h_text-with_image .text-block.custom-font-size p {
+        font-size: 14px !important;
+    }
+    .h_bottom_section .section-content-wrapper {
+        flex-direction: column !important;
+    }
+    .group-block.h_text-with_image {
+        width: 100%;
+        padding-inline: 30px!important;
+        padding-block: 40px !important;
+    }
+    .h_bottom_section .image-block {
+        width: 100%;
+    }
+    .email-signup-block .email-signup__button {
+        width: 150px!important;
+    }
+    .h_bottom_section .group-block-content {
+        gap: 20px;
+    }
+
 }
+
 
 
 @media (max-width:766px) {
@@ -392,6 +442,7 @@ p.menu-list__link-title {
     .section-resource-list__header .group-block {
         padding-block: 35px!important;
     }
+    .email-signup-block .email-signup__button,
     .block_custom_button.button {
         padding: 14px 24px !important;
     }
@@ -431,8 +482,16 @@ p.menu-list__link-title {
     .section-resource-list__header .group-block {
         padding-block: 30px!important;
     }
+    .email-signup-block .email-signup__button,
     .block_custom_button.button {
         padding: 14px 20px !important;
+    }
+    .group-block.h_text-with_image{
+        padding-inline: 20px!important;
+        padding-block: 30px !important;
+    }
+    .h_bottom_section .group-block-content {
+        gap: 10px;
     }
     
 }
