@@ -255,6 +255,22 @@ p.menu-list__link-title {
     white-space: nowrap;
 }
 
+.block__social-text {
+    margin: 0 !important;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.social-icons__wrapper {
+    align-items: center;
+    gap: 8px !important;
+}
+.social-icons__icon-wrapper a {
+    width: 100%;
+    height: 100%;
+}
 
 @media (max-width:1520px) {
     .group-block.h_text-with_image {
@@ -428,9 +444,6 @@ p.menu-list__link-title {
     .menu__item+.menu__item {
         margin-top: 12px!important;
     }
-    .block__footer_email_wrapper .group-block-content {
-        gap: 16px!important;
-    }
 
 }
 
@@ -453,16 +466,35 @@ p.menu-list__link-title {
     }
     .block__footer_bottom .group-block-content {
         flex-direction: row !important;
+        flex-wrap: wrap !important;
         justify-content: space-between !important;
+        gap: 20px !important;
     }
-    .block__footer_bottom, .block__footer_email_wrapper, .block_footer_menu_list {
+    .block__footer_email_wrapper, .block_footer_menu_list {
         padding-inline: 16px!important;
+        padding-block: 20px;
+    }
+    .block__footer_bottom{
+        padding-inline: 16px!important;
+        padding-block: 12px;
     }
     .block_footer_menu_list .group-block-content {
         gap: 10px;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
     }
     .email-signup-block .email-signup__button {
         width: 120px!important;
+    }
+    .block_footer_menu_list .group-block-content accordion-custom.menu {
+        width: calc(33.33% - 7px);
+    }
+    .group-block.social_media_group {
+        margin-top: 14px;
+    }
+    .social_media_group .group-block-content {
+        flex-direction: column !important;
+        align-items: center !important;
     }
 }
 
@@ -490,6 +522,7 @@ p.menu-list__link-title {
     .block_custom_button.button {
         padding: 14px 24px !important;
     }
+    
 }
 
 @media (max-width:640px) {
@@ -547,16 +580,15 @@ p.menu-list__link-title {
     .section-resource-list__header .group-block {
         padding-block: 28px!important;
     }
-    .block__footer_bottom .group-block-content {
-        flex-direction: column !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
+
     .email-signup-block .email-signup__input {
         padding: 12px !important;
     }
-    .block__footer_email_wrapper .group-block-content {
-        gap: 10px !important;
+    .block_footer_menu_list .group-block-content accordion-custom.menu {
+        width: 100% ;
+    }
+    .block_footer_menu_list .group-block-content {
+        align-items: flex-start !important;
     }
 }
 
