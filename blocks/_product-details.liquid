@@ -26,7 +26,7 @@
     {% content_for 'blocks' %}
   {% endcapture %}
 
-  {% render 'group', children: children, settings: block_settings, shopify_attributes: block.shopify_attributes %}
+  {% render 'group', children: children, settings: block_settings, shopify_attributes: block.shopify_attributes  %}
 </div>
 
 {% stylesheet %}
@@ -429,6 +429,11 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom CSS Class"
     }
   ],
   "presets": [

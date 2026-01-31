@@ -3526,7 +3526,7 @@ slideshow-arrows .slideshow-control {
 }
 
 slideshow-arrows .slideshow-control.slideshow-control--style-none {
-  display: block;
+  display: block ;
 }
 
 .media-gallery--carousel slideshow-arrows .slideshow-control {

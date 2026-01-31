@@ -61,6 +61,7 @@
             ref="fieldsets[]"
             {{ option_id_attribute }}
           >
+          {%  assign product_option_name = product_option.name | handleize %}
             <legend>
               {{ product_option.name | escape -}}
               {%- if variant_style == 'swatch' -%}
@@ -72,7 +73,12 @@
                 {% assign longest_value = product_option_value.size %}
               {% endif %}
               <label
-                class="variant-option__button-label{% if variant_style == 'swatch' %} variant-option__button-label--has-swatch{% endif %}"
+                class="variant-option__button-label 
+                {{ product_option_name }}__variant
+                {% if variant_style == 'swatch' %} variant-option__button-label--has-swatch{% endif %}"
+                {%  if product_option_name == 'color' %}
+                  style="background: {{ product_option_value.variant.metafields.custom.variant_color_code }};"
+                {% endif %}
               >
                 <input
                   type="radio"

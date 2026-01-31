@@ -21,9 +21,10 @@
 %}
 
 <div
-  class="product-media"
+  class="product-media {% if media.alt == 'studio' %} block__media_active {% endif %}"
   style="--ratio: {{ media.aspect_ratio }}"
   data-media-id="{{ media.id }}"
+  data-media-alt="{{ media.alt }}"
 >
   {% liquid
     assign high_res_url = media.preview_image | image_url: width: 3840

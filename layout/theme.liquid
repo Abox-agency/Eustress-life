@@ -42,7 +42,7 @@
     {{ content_for_header }}
   </head>
 
-  <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
+  <body class="page-width-{{ settings.page_width }} {{ template.name }}_page card-hover-effect-{{ settings.card_hover_effect }}">
     {% render 'skip-to-content-link', href: '#MainContent', text: 'accessibility.skip_to_text' %}
     <div id="header-group">
       {% sections 'header-group' %}
@@ -117,5 +117,43 @@
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
     {% endif %}
+
+    <script>
+  const buttons = document.querySelectorAll('.blokck__media-button_change');
+  const mediaItems = document.querySelectorAll('.product-media');
+  const thumbnails = document.querySelectorAll('.slideshow-controls__thumbnail');
+
+  function setActiveByAlt(targetAlt) {
+
+    /* main media */
+    mediaItems.forEach(media =>
+      media.classList.toggle(
+        'block__media_active',
+        media.dataset.mediaAlt?.toLowerCase() === targetAlt
+      )
+    );
+
+    /* thumbnails */
+    thumbnails.forEach(thumb => {
+      const isMatch = thumb.dataset.mediaAlt?.toLowerCase() === targetAlt;
+
+      thumb.classList.toggle('is-active', isMatch);
+      thumb.setAttribute('aria-selected', isMatch);
+
+      if (isMatch) thumb.click();
+    });
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('block_active'));
+      btn.classList.add('block_active');
+
+      setActiveByAlt(btn.textContent.trim().toLowerCase());
+    });
+  });
+</script>
+
+
   </body>
 </html>
